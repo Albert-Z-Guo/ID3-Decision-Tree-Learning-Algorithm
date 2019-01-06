@@ -1,13 +1,13 @@
 # ID3 Decision Tree Learning Algorithm
 
-This is a basic implementation of ID3 Decision Tree Learning Algorithm with error-reduced pruning from group up. 
+This is a basic implementation of ID3 Decision Tree Learning Algorithm with error-reduced pruning from gound up. 
 
 To test all functions, run:
 ```python
 unit_test.py
 ```
 
-To plot the learning curves, run:
+To plot the learning curves with and without pruning, run:
 ```python
 plot.py
 ```
