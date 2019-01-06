@@ -14,6 +14,10 @@ node.py # defines the node class
 ID3.py # contains the main implementation of the algorithm
 ```
 
+```python
+house_votes_84.data # contains the data used
+```
+
 To test all functions, run:
 ```python
 unit_tests.py
