@@ -12,4 +12,4 @@ To plot the learning curves with and without pruning, run:
 plot.py
 ```
 
-![alt_text](https://github.com/Albert-Z-Guo/ID3-Decision-Tree-Learning-Algorithm/blob/master/Learning%20Curvees.png)
+![alt_text](https://github.com/Albert-Z-Guo/ID3-Decision-Tree-Learning-Algorithm/blob/master/Learning%20Curves.png)
