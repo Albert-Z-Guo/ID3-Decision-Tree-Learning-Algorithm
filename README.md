@@ -4,7 +4,7 @@ This is a basic implementation of ID3 Decision Tree Learning Algorithm with erro
 
 To test all functions, run:
 ```python
-unit_test.py
+unit_tests.py
 ```
 
 To plot the learning curves with and without pruning, run:
