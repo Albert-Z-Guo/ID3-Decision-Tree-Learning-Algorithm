@@ -2,6 +2,11 @@
 
 This is a basic implementation of ID3 Decision Tree Learning Algorithm with error-reduced pruning from gound up. 
 
+```python
+parse.py
+```
+takes a filename and returns attribute information and all the data in array of dictionaries
+
 To test all functions, run:
 ```python
 unit_tests.py
