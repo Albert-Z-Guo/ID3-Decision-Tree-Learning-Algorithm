@@ -76,6 +76,7 @@ def prune(node, examples):
         node.pruned = True
         if accuracy_before_pruning >= test(TREE, examples):
             node.pruned = False
+            
     prune_node(TREE, examples)
 
 
