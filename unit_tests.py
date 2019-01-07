@@ -105,4 +105,4 @@ def testPruningOnHouseData(inFile):
 testID3AndEvaluate()
 testID3AndTest()
 testPruning()
-# testPruningOnHouseData(inFile)
+testPruningOnHouseData(inFile)
