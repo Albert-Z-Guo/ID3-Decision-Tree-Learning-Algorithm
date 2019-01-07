@@ -20,12 +20,12 @@ house_votes_84.data # contains the data used
 
 To test all functions, run:
 ```python
-unit_tests.py
+python3 unit_tests.py
 ```
 
 To plot the learning curves with and without pruning, run:
 ```python
-plot.py
+python3 plot.py
 ```
 
 ![alt_text](https://github.com/Albert-Z-Guo/ID3-Decision-Tree-Learning-Algorithm/blob/master/Learning%20Curves.png)
