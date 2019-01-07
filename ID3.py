@@ -69,14 +69,13 @@ def prune(node, examples):
                 node.pruned = False
             return
 
-        for value, node in node.children.items():
-            prune_node(node, examples)
+        for value, child in node.children.items():
+            prune_node(child, examples)
 
         accuracy_before_pruning = test(TREE, examples)
         node.pruned = True
         if accuracy_before_pruning >= test(TREE, examples):
             node.pruned = False
-            
     prune_node(TREE, examples)
 
 
