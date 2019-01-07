@@ -55,7 +55,7 @@ def ID3(examples, default):
 TREE = None
 def prune(node, examples):
     '''
-    Takes in a trained tree and a validation set of examples. Recusively (Postorder)
+    Takes in a trained tree and a validation set of examples. Recursively (Postorder)
     prune nodes to improve accuracy on the validation data.
     '''
     global TREE
@@ -76,7 +76,7 @@ def prune(node, examples):
         node.pruned = True
         if accuracy_before_pruning >= test(TREE, examples):
             node.pruned = False
-            
+
     prune_node(TREE, examples)
 
 
