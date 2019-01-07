@@ -11,7 +11,7 @@ node.py # defines the node class
 ```
 
 ```python
-ID3.py # contains the main implementation of the algorithm
+ID3.py # contains the main implementation of the algorithm, which is modularized for better readability
 ```
 
 ```python
