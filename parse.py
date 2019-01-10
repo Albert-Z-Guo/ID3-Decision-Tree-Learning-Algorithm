@@ -5,8 +5,7 @@ def parse(filename):
   takes a filename and returns attribute information and all the data in array of dictionaries
   '''
   # initialize variables
-
-  out = []  
+  out = []
   csvfile = open(filename,'r')
   fileToRead = csv.reader(csvfile)
 
