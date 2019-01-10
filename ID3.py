@@ -56,7 +56,7 @@ TREE = None
 def prune(node, examples):
     '''
     Takes in a trained tree and a validation set of examples. Recursively (Postorder)
-    prune nodes to improve accuracy on the validation data.
+    prune leaf nodes to improve accuracy on the validation data.
     '''
     global TREE
     TREE = node
