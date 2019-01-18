@@ -1,8 +1,8 @@
 # ID3 Decision Tree Learning Algorithm
 
-This repository contains a basic implementation of ID3 (Iterative Dichotomiser 3) Decision Tree Learning Algorithm with error-reduced pruning from gound up.
+This repository contains the implementation of a variant of ID3 (Iterative Dichotomiser 3) Decision Tree Learning Algorithm with recursive PostOrder error-reduced pruning from gound up.
 
-Note that this algorithm supports learning from examples with missing values.
+Note that this algorithm supports learning from examples with missing attribute values.
 
 ```python
 parse.py # takes a filename and returns attribute information and all the data in array of dictionaries
