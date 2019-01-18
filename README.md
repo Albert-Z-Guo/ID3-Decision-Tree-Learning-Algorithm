@@ -1,6 +1,6 @@
 # ID3 Decision Tree Learning Algorithm
 
-This repository contains the implementation of a variant of ID3 (Iterative Dichotomiser 3) Decision Tree Learning Algorithm with recursive PostOrder error-reduced pruning from gound up.
+This repository contains the implementation of a variant of [ID3 (Iterative Dichotomiser 3) Decision Tree Learning Algorithm](https://en.wikipedia.org/wiki/ID3_algorithm) with recursive PostOrder error-reduced pruning from gound up.
 
 Note that this algorithm supports learning from examples with missing attributes.
 
