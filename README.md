@@ -16,9 +16,9 @@ node.py # defines the node class
 ID3.py # contains the main implementation of the algorithm, which is modularized for better readability
 ```
 
-```python
-house_votes_84.data # contains the data (political party in this example) used
-```
+
+'house_votes_84.data' # contains the data (political party in this example) used
+
 
 To test all functions, run:
 ```python
