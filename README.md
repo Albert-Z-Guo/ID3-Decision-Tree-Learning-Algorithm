@@ -10,7 +10,7 @@ Note that this algorithm supports learning from examples with missing attribute 
 
 `ID3.py` contains the main implementation of the algorithm, which is modularized for better readability.
 
-`house_votes_84.data` contains the data (political party in this example) used.
+`house_votes_84.data` is the example data (policy votes) used for classification (political parties).
 
 To test all functions, run:
 ```python
