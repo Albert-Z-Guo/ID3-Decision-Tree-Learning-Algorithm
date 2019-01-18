@@ -4,21 +4,13 @@ This repository contains the implementation of a variant of ID3 (Iterative Dicho
 
 Note that this algorithm supports learning from examples with missing attribute values.
 
-```python
-parse.py # takes a filename and returns attribute information and all the data in array of dictionaries
-```
+`parse.py` takes a filename and returns attribute information and all the data in array of dictionaries.
 
-```python
-node.py # defines the node class
-```
+`node.py` defines the node class with fields.
 
-```python
-ID3.py # contains the main implementation of the algorithm, which is modularized for better readability
-```
+`ID3.py` contains the main implementation of the algorithm, which is modularized for better readability.
 
-
-`house_votes_84.data` # contains the data (political party in this example) used
-
+`house_votes_84.data` contains the data (political party in this example) used.
 
 To test all functions, run:
 ```python
