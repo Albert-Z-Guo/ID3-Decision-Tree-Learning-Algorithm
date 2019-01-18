@@ -158,7 +158,7 @@ def H(examples, attribute, attribute_value):
 def entropy_gain(examples, attribute):
     values = []
     for example in examples:
-        # if value is missing for an attribute, replace '?' with the mode value
+        # if an attribute value is missing, replace '?' with the mode value
         if example[attribute] == '?':
             values.append(mode_attribute_value(examples, attribute))
         else:
