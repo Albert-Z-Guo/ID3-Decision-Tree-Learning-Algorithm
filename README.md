@@ -10,7 +10,7 @@ Note that this algorithm supports learning from examples with missing attributes
 
 `ID3.py` contains the main implementation of the algorithm, which is modularized for better readability.
 
-`house_votes_84.data` is the example dataset (policy votes) used for classification (political parties). This dataset contains [the 1984 U.S. Congressional Voting Records](https://archive.ics.uci.edu/ml/machine-learning-databases/voting-records/).
+`house_votes_84.data` is the example dataset (policy votes) used for classification (political parties). This dataset contains [the 1984 U.S. Congressional Voting Records](https://archive.ics.uci.edu/ml/machine-learning-databases/voting-records/), retrieved [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 
 To test all functions, run:
 ```python
