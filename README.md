@@ -6,7 +6,7 @@ Note that this algorithm supports learning from examples with missing attributes
 
 `parse.py` takes a filename and returns attribute information and all the data in array of dictionaries.
 
-`node.py` defines the node class with fields.
+`node.py` defines the node class with related fields.
 
 `ID3.py` contains the main implementation of the algorithm, which is modularized for better readability.
 
