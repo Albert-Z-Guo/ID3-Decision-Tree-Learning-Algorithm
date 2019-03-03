@@ -72,6 +72,7 @@ def prune(node, examples):
         for value, child in node.children.items():
             prune_node(child, examples)
 
+        # start pruning when recursion stops
         accuracy_before_pruning = test(TREE, examples)
         node.pruned = True
         if accuracy_before_pruning >= test(TREE, examples):
