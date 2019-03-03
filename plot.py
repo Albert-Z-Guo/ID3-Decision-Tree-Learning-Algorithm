@@ -1,6 +1,8 @@
+import random
+
 import ID3
 import parse
-import random
+
 from matplotlib import pyplot as plt
 
 
