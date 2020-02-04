@@ -6,13 +6,14 @@ from collections import Counter
 def ID3(examples, default):
     '''
     Takes in an array of examples, and returns a tree (an instance of Node)
-    trained on the examples.  Each example is a dictionary of attribute:value pairs,
+    trained on the examples. Each example is a dictionary of attribute:value pairs,
     and the target class variable is a special attribute with the name "Class".
     Any missing attributes are denoted with a value of "?"
     '''
     # if there is no example, return a tree with default class label
     if len(examples) == 0:
-        return Node(default)
+        tree = Node(default)
+        return tree
 
     # if all examples are classified to the same class
     # or if no non-trivial splits are possible (i.e. no split on single example)
@@ -55,8 +56,8 @@ def ID3(examples, default):
 TREE = None
 def prune(node, examples):
     '''
-    Takes in a trained tree and a validation set of examples. Recursively (Postorder)
-    prune leaf nodes to improve accuracy on the validation data.
+    Takes in a trained tree and a validation set of examples. 
+    Recursively (Postorder) prune leaf nodes to improve accuracy on the validation data.
     '''
     global TREE
     TREE = node
@@ -83,21 +84,20 @@ def prune(node, examples):
 
 def test(node, examples):
     '''
-    Takes in a trained tree and a test set of examples.  Returns the accuracy (fraction
-    of examples the tree classifies correctly).
+    Takes in a trained tree and a test set of examples. 
+    Returns the accuracy (fraction of examples the tree classifies correctly).
     '''
     num_correct_label = 0
     for example in examples:
         if evaluate(node, example) == example['Class']:
             num_correct_label += 1
-
     return num_correct_label / len(examples)
 
 
 def evaluate(node, example):
     '''
-    Takes in a tree and one example.  Returns the Class value that the tree
-    assigns to the example.
+    Takes in a tree and one example. 
+    Returns the Class value that the tree assigns to the example.
     '''
     if len(node.children) == 0:
         return node.label
@@ -169,7 +169,6 @@ def entropy_gain(examples, attribute):
     entropy = 0
     for attribute_value, num_attribute_value in counter.items():
         entropy += p(num_attribute_value, len(values)) * H(examples, attribute, attribute_value)
-
     return entropy
 
 
@@ -189,5 +188,4 @@ def choose_attribute(examples):
         if entropy < min_entropy:
             min_entropy = entropy
             chosen_attribute = attribute
-
     return chosen_attribute
